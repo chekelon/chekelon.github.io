@@ -1,36 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ezequiel Rodriguez E</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chekelon · Desarrollador de Software</title>
+  <meta name="description" content="Portfolio de desarrollador móvil: Android (Kotlin) y Flutter.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <header class="nav">
+    <a class="logo" href="#inicio">Ezequiel Rodriguez Dev Portafolio</a>
+    <nav id="menu" aria-label="Principal">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button id="theme" class="icon-btn" aria-label="Cambiar tema">🌙</button>
+    <button id="burger" class="icon-btn burger" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  </header>
 
-<h1>Política de Privacidad de la Aplicación <b>Widget App</b></h1>
+  <main>
+    <section id="inicio" class="hero">
+      <p class="eyebrow">Hola, soy</p>
+      <h1>Ezequiel Rodriguez Esparza<span class="dot">.</span></h1>
+      <p class="lead">Desarrollador móvil. Construyo apps <strong>Android</strong> con Kotlin y apps multiplataforma con <strong>Flutter</strong>.</p>
+      <div class="actions">
+        <a class="btn primary" href="#proyectos">Ver proyectos</a>
+        <a class="btn" href="#contacto">Contáctame</a>
+      </div>
+    </section>
 
-   <h4>Fecha de entrada en vigor: 12 Julio 2023</h4>
-<p>En Widget App, la privacidad de nuestros usuarios es de suma importancia para nosotros. Esta Política de Privacidad describe cómo recopilamos, utilizamos, almacenamos y divulgamos la información personal que obtenemos a través de nuestra aplicación móvil. Al utilizar nuestra aplicación, usted acepta las prácticas descritas en esta política.</p>
-	<h3>Información que recopilamos</h3>
-1.1 Información personal: Podemos recopilar información personal, como su nombre, dirección de correo electrónico, número de teléfono, dirección postal y otra información que nos proporcione voluntariamente al registrarse o utilizar nuestra aplicación.<br>
-1.2 Información de uso: Recopilamos información sobre su uso de la aplicación, como el tipo de dispositivo que utiliza, el sistema operativo, la fecha y hora de acceso, las páginas visitadas y otras estadísticas relacionadas con su actividad en la aplicación.<br>
-1.3 Información de ubicación: Si otorga permiso a la aplicación, podemos recopilar información sobre su ubicación geográfica precisa a través de tecnologías como GPS, Wi-Fi y señales de torres de telefonía móvil. Esta información se utiliza para brindarle servicios basados en la ubicación, como resultados de búsqueda personalizados y anuncios relevantes.<br>
-	<h3>Uso de la información</h3>
-2.1 Utilización interna: Utilizamos la información recopilada para brindarle una experiencia personalizada dentro de la aplicación, mejorar nuestros servicios, responder a sus consultas y enviarle comunicaciones relacionadas con la aplicación.<br>
-2.2 Compartir información: No vendemos, alquilamos ni compartimos su información personal con terceros sin su consentimiento, excepto en las siguientes circunstancias:<br>
-a) Proveedores de servicios: Podemos compartir su información con proveedores de servicios de confianza que nos ayudan a operar y mantener la aplicación.<br>
-b) Cumplimiento de la ley: Podemos divulgar su información personal si creemos de buena fe que dicha divulgación es necesaria para cumplir con una obligación legal, proteger nuestros derechos o responder a un proceso legal en curso.<br>
-c) Consentimiento: Siempre que tengamos su consentimiento para compartir información personal, lo haremos de acuerdo con los términos de dicho consentimiento.<br>
-	<h3>Seguridad de la información</h3>
-Tomamos medidas razonables para proteger la información personal que recopilamos y almacenamos, utilizando medidas de seguridad físicas, técnicas y administrativas adecuadas para prevenir el acceso no autorizado, el uso indebido, la divulgación o la alteración de la información.
-	<h3>Enlaces a otros sitios web y aplicaciones</h3>
-Nuestra aplicación puede contener enlaces a otros sitios web y aplicaciones que no son operados por nosotros. No nos responsabilizamos de las prácticas de privacidad de dichos sitios web y aplicaciones. Le recomendamos que revise las políticas de privacidad de terceros antes de proporcionarles su información personal.
-	<h3>Cambios a esta Política de Privacidad</h3>
-Nos reservamos el derecho de actualizar esta Política de Privacidad en cualquier momento y sin previo aviso. Cualquier cambio entrará en vigor tan pronto como se publique la versión actualizada en nuestra aplicación. Se le recomienda que revise periódicamente esta política para estar al tanto de cualquier cambio.
-	<h3>Contacto</h3>
-Si tiene alguna pregunta o inquietud acerca de esta Política de Privacidad o nuestras prácticas de privacidad, no dude en ponerse en contacto con nosotros a través de  <b>cheke_11@hotmail.com</b>.
-Al utilizar nuestra aplicación, usted reconoce haber leído y comprendido esta Política de Privacidad y acepta todos los términos y condiciones establecidos en la misma.
+    <section id="sobre-mi" class="reveal">
+      <h2>Sobre mí</h2>
+      <p>Escribe aquí un párrafo breve sobre ti: qué estudiaste, qué te apasiona y qué tipo de proyectos buscas. Me gusta la arquitectura limpia, el código mantenible y aprender nuevas tecnologías.</p>
+    </section>
 
+    <section id="habilidades" class="reveal">
+      <h2>Habilidades</h2>
+      <ul class="chips" id="skills"></ul>
+    </section>
+
+    <section id="proyectos" class="reveal">
+      <h2>Proyectos</h2>
+      <div class="grid" id="projects"></div>
+    </section>
+
+    <section id="contacto" class="reveal">
+      <h2>Contacto</h2>
+      <p>¿Tienes una idea o una oportunidad? Escríbeme.</p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:tucorreo@ejemplo.com">chekelon@gmail.com</a>
+        <a class="btn" href="https://github.com/chekelon" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/ezequiel-rodriguez-esparza-b5709589" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Ezequiel Rodriguez Esparza · Hecho con HTML, CSS y JavaScript</footer>
 </body>
 </html>
